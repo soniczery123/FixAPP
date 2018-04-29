@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_paycard"
+            android:title="Paycard" />
+        <item
+            android:id="@+id/nav_orderHistory"
+            android:title="Order History" />
+        <item
+            android:id="@+id/nav_canlendar"
+            android:title="Calendar" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+        <item
+            android:id="@+id/nav_Edit"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log out" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Feedback" />
+        </menu>
+    </item>
+
+</menu>
