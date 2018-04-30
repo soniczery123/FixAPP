@@ -6,15 +6,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/background"
     tools:context="com.test.fixapp.login">
 
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        app:srcCompat="@mipmap/ic_launcher" />
+        android:background="@drawable/logo_fixapp"
+/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,15 +27,18 @@
 
         <ImageView
             android:id="@+id/imageUserLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/profile" />
 
         <EditText
             android:id="@+id/edittextEmail_login"
             android:layout_width="150dp"
+            android:backgroundTint="@color/colorWhite"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:textColor="@color/colorWhite"
+            android:inputType="textEmailAddress"
+            android:textColorLink="@color/colorWhite" />
 
     </LinearLayout>
 
@@ -46,15 +51,16 @@
 
         <ImageView
             android:id="@+id/imagePasswordLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher" />
-
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:background="@drawable/login_icon" />
 
 
         <EditText
             android:id="@+id/edittextPassword_login"
             android:layout_width="150dp"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
 
@@ -70,7 +76,9 @@
             android:id="@+id/checkBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Accept Promise" />
+            android:text="Accept Promise"
+            android:buttonTint="@color/colorWhite"
+            android:textColor="@color/colorWhite" />
 
 
     </LinearLayout>
@@ -87,6 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textColor="@color/colorWhite"
         android:text="or" />
 
     <Button

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context="com.test.fixapp.editProfile">
 
@@ -22,95 +23,110 @@
             app:srcCompat="@mipmap/ic_launcher" />
 
         <LinearLayout
-            android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
             android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email : " />
+                android:text="Email : "
+                android:textColor="@color/colorWhite" />
 
             <TextView
                 android:id="@+id/textEmail_Edit"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password : " />
+                android:text="Password : "
+                android:textColor="@color/colorWhite" />
 
             <EditText
                 android:id="@+id/edittextPassword_Edit"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name : " />
+                android:text="Name : "
+                android:textColor="@color/colorWhite" />
 
             <EditText
                 android:id="@+id/edittextName_Edit"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tel : " />
+                android:text="Tel : "
+                android:textColor="@color/colorWhite" />
 
             <EditText
                 android:id="@+id/edittextTel_Edit"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:backgroundTint="@color/colorWhite"
+                android:textColor="@color/colorWhite" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:gravity="center"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Location : " />
+                android:text="Location : "
+                android:textColor="@color/colorWhite" />
 
             <Spinner
                 android:id="@+id/dropdown_Edit"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"></Spinner>
+                android:backgroundTint="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"></Spinner>
         </LinearLayout>
 
     </LinearLayout>

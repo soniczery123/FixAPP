@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,12 +35,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     String getEmail;
     TextView textViewEmail, textViewName;
     ImageView imageViewProfile;
+    Button imageFix;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         View headerView = navigationView.getHeaderView(0);
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         textViewEmail = (TextView) headerView.findViewById(R.id.textViewEmail_Nav);
         textViewName = (TextView) headerView.findViewById(R.id.textViewName_Nav);
         imageViewProfile = (ImageView) headerView.findViewById(R.id.imageViewProfile_Nav);
+        imageFix = (Button) findViewById(R.id.imageFix);
 
         Intent intent = getIntent();
         getEmail = intent.getStringExtra("email");
@@ -74,6 +76,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        imageFix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,edit_order.class);
+                intent.putExtra("email",textViewEmail.getText().toString());
+                startActivity(intent);
+            }
+        });
     }
 
 
