@@ -25,7 +25,7 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        getActionBar().hide();
+        getSupportActionBar().hide();
         mHelper = new UserDBHelper(this);
         mDb = mHelper.getReadableDatabase();
 

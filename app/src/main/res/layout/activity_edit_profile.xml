@@ -124,9 +124,10 @@
             <Spinner
                 android:id="@+id/dropdown_Edit"
                 android:layout_width="wrap_content"
-                android:backgroundTint="@color/colorWhite"
-                android:layout_height="wrap_content"
-                android:textColor="@color/colorWhite"></Spinner>
+                android:layout_height="23dp"
+                android:background="@drawable/dropdown"
+
+                ></Spinner>
         </LinearLayout>
 
     </LinearLayout>
